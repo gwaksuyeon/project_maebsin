@@ -1,0 +1,114 @@
+@import url(//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+*{
+    font-family: 'Nanum Square';
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 320px;
+    width:100vw; height: 100vh;
+    background-color: #db2017;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 320px;
+    width:60%; height: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.big_logo{
+    margin: 0 auto;
+    width: 380px; height: 280px;
+}
+
+.big_logo>a{
+    display: inline-block;
+    width: 380px; height: 280px;
+}
+
+.big_logo img{
+    display: inline-block;
+    width: 100%; height: 100%;
+}
+
+form{
+    margin-top: 40px;
+}
+
+.input{
+    margin-bottom: 30px;
+}
+
+.input_id, .input_pw{
+    position: relative;
+}
+
+.input_id{
+    margin-bottom: 10px;
+}
+
+.input_id>i, .input_pw>i{
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px; height: 30px;
+    background-color: #db2017;
+    border-radius: 100px;
+    color: white;
+    padding: 7px;
+    margin-left:5px; 
+}
+
+.input_id>input, .input_pw>input{
+    width: 285px; height: 45px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px 5px 40px;
+}
+
+.button > button{
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    color: #db2017;
+    padding: 5px;
+    margin-right:40px; 
+    cursor: pointer;
+}
+
+.button > a{
+    display: inline-block;
+    width: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 5px;
+}
+
+@media screen and (max-width: 970px){
+    .big_logo,.big_logo>a{
+        width:300px; height: 200px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .big_logo,.big_logo>a{
+        width:250px; height: 150px;
+    }
+    .input_id>input, .input_pw>input{
+        width: 250px;
+    }
+}
